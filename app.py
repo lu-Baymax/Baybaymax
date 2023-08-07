@@ -2,8 +2,6 @@
 # coding: utf-8
 
 # In[ ]:
-
-
 from flask import Flask, render_template, request
 import json,time,requests
 
@@ -35,7 +33,10 @@ def index():
         return (render_template("index.html", result="waiting for your question....."))
 
 if __name__ == "__main__":
-    app.run(port=5002)
+    app.run()
+
+
+     
 
 
 # In[ ]:
